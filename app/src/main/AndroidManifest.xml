@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.uatech.MyUnix">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo_foreground2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PDFViewerActivity"></activity>
+        <activity android:name=".DownloadList" />
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".WebViewActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
+        <activity
+            android:name=".PrevYearsActivity"
+            android:label="Year"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubjectActivity"
+            android:label="Subject"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SemesterActivity"
+            android:label="Semester"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CoursesActivity"
+            android:label="Course"
+            android:screenOrientation="portrait" />
+        <activity android:name=".demo" />
+        <activity
+            android:name=".MainActivity"
+            android:label="University/College"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

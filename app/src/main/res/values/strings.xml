@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyUniversity</string>
+    <string name="Open">MyUniversity</string>
+    <string name="Close">MyUniversity</string>
+
+    <string name="AboutUsDescription">At our app, our aim is to provide all type of resources to college students from all universities at one place.
+        Currently we are in the initial phase of our aim and starting from just a few resources from few selected universities to know the response
+        from our audience. We will constantly work on it to provide more and more resources from as many universities possible.</string>
+
+    <string name="AboutUsEnding">Just keep supporting us and show your love.</string>
+</resources>
